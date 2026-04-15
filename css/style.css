@@ -14,6 +14,7 @@
 /* 1 General */
 @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -62,4 +63,198 @@ a {
 ::-webkit-scrollbar-thumb {
   background: var(--primary-color);
 }
- 
+
+.main-btn {
+  display: inline-block;
+  color: var(--text-black);
+  text-align: center;
+  padding: 0.8571rem 2.1429rem;
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  background-color: var(--primary-color);
+  text-transform: capitalize;
+  border-radius: 1.7857rem;
+  transition: all 0.3s ease;
+}
+
+.main-btn:hover {
+  background-color: var(--bg-white);
+  box-shadow: 0 0.3571rem 1.0714rem var(--secondary-color);
+  transform: scale(1.05);
+}
+
+h1 {
+  font-size: 4rem;
+  margin-bottom: 1.25rem;
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  background: linear-gradient(45deg, var(--bg-white), var(--primary-color));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 1.4286rem rgba(0, 255, 55, 0.3);
+}
+
+h2{
+  font-size: 2.875rem;
+  font-weight: 700;
+  color: var(--text-white);
+  font-family: var(--secondary-font);
+  text-transform: capitalize;
+}
+
+h3{
+  font-size: 2.25rem;
+  font-weight: 600;
+  color: var(--text-white);
+  font-family: var(--secondary-font);
+}
+
+h4{
+  font-size: 1.7143rem;
+  font-weight: 600;
+  color: var(--text-white);
+  font-family: var(--secondary-font);
+  margin-bottom: 1.5rem;
+}
+
+h5{
+  font-size: 1.2875rem;
+  font-weight: 600;
+  color: var(--text-white);
+  margin-bottom: 0.9375rem;
+}
+
+h6{
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-white);
+  margin-bottom: 0.9375rem;
+}
+
+p{
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--text-light);
+  line-height: 1.625rem;
+}
+
+.wrapper{
+  padding: 5.25rem 0;
+}
+
+.wrapper .highlight{
+  color: var(--primary-text);
+}
+
+.section-title .title-design{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.0714rem;
+}
+
+section-title .title-design .line{
+  width:5rem;
+  height:0.1429rem;
+  background:var(--primary-color);
+}
+
+section-title .title-design i{
+  color:var(--primary-color);
+  font-size:2.1429rem;
+}
+
+.common-card{
+  background:var(--bg-dark-light);
+  border-radius: 1.0714rem;
+  padding:2.1429rem;
+  margin-bottom:2.1429rem;
+  border:0.0714rem solid var(--bg-black);
+  transition:transform 0.3s ease;
+}
+
+.common-card .card-icon{
+  width:4.2857rem;
+  height:4.2857rem;
+  background:var(--primary-color);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom:1.4286rem;
+}
+
+.common-card .card-icon i{
+  font-size: 1.4286rem;
+}
+
+/* 2. Navbar */
+.header_wrapper .navbar{
+  padding: 0.9375rem 0;
+  background-color: var(--bg-black);
+  transition: 0.3s ease-in-out;
+}
+
+.header_wrapper .navbar-toggler{
+  border: 0;
+  color: var(--text-white);
+  line-height: 2;
+}
+
+.header_wrapper .navbar-toggler:focus{
+  box-shadow: none;
+}
+
+.header_wrapper .nav-item{
+  margin: 0 0.625rem;
+}
+
+.header_wrapper .nav-item .nav-link{
+  font-size: 1rem;
+  font-family: var(--secondary-font);
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--text-white);
+  display: inline-block;
+}
+
+.header_wrapper .nav-item .nav-link.active, 
+.header_wrapper .nav-item .nav-link:hover{
+  color: var(--primary-text);
+}
+
+.header_wrapper .nav-item .main-btn{
+  font-size: 1rem;
+  padding: 0.5714rem 1.7143rem;
+}
+
+.main-btn .swing{
+  animation: shake 1s ease infinite;
+}
+
+@keyframes shake{
+  0%,
+  100%{
+    transform: rotate(0deg);
+  }
+  20%,
+  60%{
+    transform: rotate(-10deg);
+  }
+  40%,
+  80%{
+    transform: rotate(10deg);
+  }
+}
+
+.navbar .header-scrolled{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  background-color: var(--bg-black);
+  box-shadow: 0.5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%);
+  transition: 0.3 ease-in-out;
+}
