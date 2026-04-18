@@ -154,13 +154,13 @@ p{
   gap: 1.0714rem;
 }
 
-section-title .title-design .line{
+.section-title .title-design .line{
   width:5rem;
   height:0.1429rem;
   background:var(--primary-color);
 }
 
-section-title .title-design i{
+.section-title .title-design i{
   color:var(--primary-color);
   font-size:2.1429rem;
 }
@@ -257,4 +257,57 @@ section-title .title-design i{
   background-color: var(--bg-black);
   box-shadow: 0.5084rem 1.1419rem 2.5rem 0 rgb(0 0 0 / 8%);
   transition: 0.3 ease-in-out;
+}
+/* 3. Top banner */
+
+.banner_wrapper{
+  background-color: var(--bg-black);
+  position: relative;
+}
+
+.vertical-text{
+  position: absolute;
+  right: 3.2143rem;
+  top: 40%;
+  transform: rotate(-90deg) translateX(50%);
+  transform-origin: right;
+  font-family: var(--secondary-font);
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--primary-text);
+  opacity: 1.1;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+.banner_wrapper p{
+  max-width: 80%;
+  color: var(--text-light);
+  margin-bottom: 1.5rem;
+}
+
+.hero-badges{
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.hero-badges .badge{
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: var(--bg-dark-light);
+  padding: 0.5rem 1rem;
+  border-radius: 1.4286rem;
+  font-size: 1.1429rem;
+}
+
+.hero-badges .badge i{
+  color: var(--primary-text);
+}
+
+/* 4 About */
+.about_wrapper{
+  background: var(--bg-black-secondry)
 }
