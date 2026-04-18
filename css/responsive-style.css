@@ -95,5 +95,7 @@
   }
 
   /* Ads */
-  
+  .ads_wrapper .ad-image{
+    margin-top: 2.1429rem;
+  }
 }
