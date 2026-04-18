@@ -311,3 +311,27 @@ p{
 .about_wrapper{
   background: var(--bg-black-secondry)
 }
+
+/* 5 Products */
+.products_wrapper .card{
+  background: var(--bg-dark-light);
+  border-radius: 1.0714rem;
+  box-shadow: 0 0.7143rem 1.4286rem rgba(0, 0, 0, 0.2);
+  height: 100%;
+  transition: transform 0.3s ease;
+}
+
+.products_wrapper .card:hover{
+  transform: translateY(-0.7143rem);
+}
+
+.products_wrapper .card .product-img{
+  width: 100%;
+  height: 100%;
+}
+
+.products_wrapper .card p{
+  color: var(--primary-text);
+  text-transform: uppercase;
+  font-weight: 700;
+}
